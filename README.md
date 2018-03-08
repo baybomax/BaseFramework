@@ -13,3 +13,4 @@ This repository for contributing project base framework
     	...
     	implementation 'com.github.dengbo1994:common_framework:1.0.0'
 	}
+
