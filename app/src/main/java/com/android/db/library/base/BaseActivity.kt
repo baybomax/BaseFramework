@@ -17,6 +17,7 @@ import android.view.Window
 import android.widget.LinearLayout
 import com.android.db.library.R
 import com.android.db.library.util.detached
+import org.greenrobot.eventbus.Subscribe
 import org.jetbrains.anko.*
 
 /**
@@ -365,4 +366,12 @@ open class BaseActivity: FragmentActivity() {
             permissionsGranted()
         }
     }
+
+    /**
+     * This is to prevent compile error, when registered subclasses to event bus without
+     * subscribing any event.
+     * @param ignored dummy event.
+     */
+    @Subscribe
+    fun dummy(ignored: DummyEvent) {}
 }
