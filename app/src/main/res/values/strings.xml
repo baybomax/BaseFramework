@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">library</string>
+
+    <string name="please_grant_permissions">Please grant all the permissions, before this application can run correctly!</string>
+    <string name="permissions">Permission</string>
+    <string name="grant_again">Grant again</string>
+
 </resources>

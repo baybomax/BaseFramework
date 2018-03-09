@@ -1,7 +1,11 @@
 package com.android.db.library.util
 
 import android.annotation.SuppressLint
+import android.content.Context
 import android.view.View
+import android.view.ViewGroup
+import android.view.ViewManager
+import android.widget.LinearLayout
 import com.android.db.library.Const
 import java.io.File
 import java.text.SimpleDateFormat
@@ -63,3 +67,19 @@ val Date.string: String
 
 val String.slashes: String
     get() = replace("/", File.separator)
+
+
+/**
+ * Detach view from root
+ * @param handler
+ */
+inline fun Context.detached(handler: ViewManager.()->View): View {
+    val root = LinearLayout(this)
+    root.layoutParams = ViewGroup.LayoutParams(
+            ViewGroup.LayoutParams.MATCH_PARENT,
+            ViewGroup.LayoutParams.MATCH_PARENT
+    )
+    val view = root.handler()
+    root.removeView(view)
+    return view
+}
