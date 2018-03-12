@@ -1,4 +1,4 @@
-package com.android.db.library.ui
+package com.android.db.library.adapter
 
 import android.content.Context
 import android.view.LayoutInflater

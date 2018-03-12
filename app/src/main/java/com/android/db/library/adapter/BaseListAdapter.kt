@@ -1,4 +1,4 @@
-package com.android.db.library.ui
+package com.android.db.library.adapter
 
 import android.view.View
 import android.view.ViewGroup

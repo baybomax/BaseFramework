@@ -1,4 +1,4 @@
-package com.android.db.library.ui
+package com.android.db.library.adapter
 
 import android.support.v7.widget.RecyclerView
 import android.util.SparseArray
