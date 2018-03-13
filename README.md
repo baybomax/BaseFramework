@@ -1,7 +1,7 @@
 # common_framework
 This repository for contributing project base framework 
 
-[![](https://www.jitpack.io/v/dengbo1994/common_framework.svg)](https://www.jitpack.io/#dengbo1994/common_framework)
+[![](https://www.jitpack.io/v/baybomax/common_framework.svg)](https://www.jitpack.io/#baybomax/common_framework)
 
 # How to use
 	repositories {
@@ -13,6 +13,6 @@ This repository for contributing project base framework
 
 	dependencies {
     	...
-    	implementation 'com.github.dengbo1994:common_framework:1.1.0'
+    	implementation 'com.github.baybomax:common_framework:1.1.1'
 	}
 
