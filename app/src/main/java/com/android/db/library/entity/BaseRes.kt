@@ -7,8 +7,8 @@ package com.android.db.library.entity
  */
 
 abstract class BaseResponse {
-    var code = 0
-    var msg  = ""
+    var code     = 0
+    var message  = ""
 }
 
 abstract class BasePageResponse: BaseResponse() {
