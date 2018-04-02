@@ -7,7 +7,7 @@ This repository for contributing project base framework
 	repositories {
     	...
     	maven {
-        	url "https://jitpack.io"
+			url "https://jitpack.io"
     	}
 	}
 
